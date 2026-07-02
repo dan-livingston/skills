@@ -13,7 +13,7 @@ npx skills add dan-livingston/skills
 Add a single skill:
 
 ```sh
-npx skills add dan-livingston/skills -s example-skill
+npx skills add dan-livingston/skills -s new-skill
 ```
 
 List available skills without installing:
@@ -28,7 +28,7 @@ Each skill is a directory under `skills/` with a `SKILL.md`:
 
 ```
 skills/
-  example-skill/
+  new-skill/
     SKILL.md
 ```
 
@@ -37,8 +37,5 @@ the agent matches against to decide when to trigger the skill, so make it precis
 
 ## Add a skill
 
-```sh
-npx skills init skills/<your-skill-name>
-```
-
-Then edit the generated `SKILL.md`.
+Run the `new-skill` skill and answer its questions. It scaffolds a lean
+`skills/<name>/SKILL.md` for you.
